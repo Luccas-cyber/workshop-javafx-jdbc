@@ -28,17 +28,17 @@ public class MainViewController implements Initializable {
 	private MenuItem menuItemAbout;
 
 	@FXML
-	public void menuItemSellerAction() {
-		System.out.println("menuItemSellerAction");
+	public void onMenuItemSellerAction() {
+		System.out.println("onMenuItemSellerAction");
 	}
 
 	@FXML
-	public void menuItemDepartmentAction() {
-		System.out.println("menuItemDepartmentAction");
+	public void onMenuItemDepartmentAction() {
+		loadView("/gui/DepartmentList.fxml");
 	}
 
 	@FXML
-	public void menuItemAboutAction() {
+	public void onMenuItemAboutAction() {
 		loadView("/gui/About.fxml");
 	}
 
